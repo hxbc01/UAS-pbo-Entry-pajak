@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uas.pbo.FXMLDocumentController">
+    <children>
+      <AnchorPane prefHeight="713.0" prefWidth="313.0" style="-fx-background-color: #006994;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="588.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutX="14.0" layoutY="525.0" mnemonicParsing="false" onAction="#add_data" prefHeight="40.0" prefWidth="86.0" style="-fx-background-color: green;" text="Add" />
+            <Button layoutX="119.0" layoutY="525.0" mnemonicParsing="false" onAction="#edit" prefHeight="40.0" prefWidth="78.0" style="-fx-background-color: #FF7429;" text="Update" />
+            <Button layoutX="215.0" layoutY="525.0" mnemonicParsing="false" onAction="#Delete" prefHeight="40.0" prefWidth="78.0" style="-fx-background-color: red;" text="Delete" />
+            <TextField fx:id="txt_Npwp" layoutX="51.0" layoutY="200.0" prefHeight="35.0" prefWidth="203.0" promptText="Npwp" />
+            <TextField fx:id="txt_Nama" layoutX="51.0" layoutY="251.0" prefHeight="35.0" prefWidth="203.0" promptText="Nama" />
+            <TextField fx:id="txt_Alamat" layoutX="51.0" layoutY="301.0" prefHeight="35.0" prefWidth="203.0" promptText="Alamat" />
+            <TextField fx:id="txt_jenis_pajak" layoutX="51.0" layoutY="352.0" prefHeight="35.0" prefWidth="203.0" promptText="jenis pajak" />
+            <TextField fx:id="txt_Terbilang" layoutX="51.0" layoutY="405.0" prefHeight="35.0" prefWidth="203.0" promptText="Terbilang" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="36.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Logo%20DJP%20-%20Primer.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="142.0" layoutY="35.0" text="Direktorat" textFill="#fcfafa">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="142.0" layoutY="63.0" text="Jenderal" textFill="#fcfafa">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="142.0" layoutY="89.0" text="Pajak" textFill="#fcfafa">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tabel_user" layoutX="312.0" layoutY="140.0" prefHeight="573.0" prefWidth="589.0">
+        <columns>
+          <TableColumn fx:id="col_Npwp" prefWidth="121.0" text="Npwp" />
+          <TableColumn fx:id="col_Nama" prefWidth="109.0" text="Nama" />
+            <TableColumn fx:id="col_Alamat" prefWidth="103.0" text="Alamat" />
+            <TableColumn fx:id="col_jenis_pajak" prefWidth="100.0" text="Jenis pajak" />
+            <TableColumn fx:id="col_Terbilang" prefWidth="155.0" text="Terbilang" />
+        </columns>
+      </TableView>
+      <Label layoutX="331.0" layoutY="53.0" prefHeight="35.0" prefWidth="257.0" text="Pengisian data pajak">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="331.0" layoutY="78.0" prefHeight="35.0" prefWidth="257.0" text="Bandar lampung">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="108.0" fitWidth="86.0" layoutX="794.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LOGO_KOTA_BANDAR_LAMPUNG_BARU.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
