@@ -2,7 +2,9 @@
 Entry data pajak using javafx use databases
 
 Nama kelompok : - M.Tazmir Fadel - 1907051009
+                - Wahyu Tiono - 1907051019
                 - Muhammad Arif A.F - 1907051020
+               
 
 Program ini adalah program penginputan data pajak
 yang dimana terdapat Npwp (PRIMARY),nama,alamat,jenis pajak, dan terbilang sebagai inputan 
